@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.product.org/ProductServiceRes" 
+xmlns:res="http://www.product.org/ProductServiceRes" 
+elementFormDefault="qualified">
+
+<element name="ProductServiceRes" type="res:ProductServiceReqType"/>
+
+<complexType name="ProductServiceReqType">
+<sequence>
+<element name="StatusBlock" type="res:StatusBlockType"/>
+<element name="Product" type="res:ProductType"/>
+<element name="BalanceDetail" type="res:BalanceDetailType"/>
+</sequence>
+</complexType>
+<complexType name="StatusBlockType">
+<sequence>
+<element name="resCode" type="string"/>
+<element name="resmesg" type="string"/>
+</sequence>
+</complexType>
+<complexType name="ProductType">
+<sequence>
+<element name="clouth" type="string"/>
+<element name="electronice" type="string"/>
+<element name="dailyUse" type="string"/>
+</sequence>
+</complexType>
+<complexType name="BalanceDetailType">
+<sequence>
+<element name="currentLimit" type="double"/>
+<element name="eligibalAmount" type="double"></element>
+</sequence>
+</complexType>
+</schema>

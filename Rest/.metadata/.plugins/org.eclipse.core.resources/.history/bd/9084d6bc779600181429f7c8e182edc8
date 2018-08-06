@@ -1,0 +1,9 @@
+package com.keybank.cards.offers.dao;
+
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyReq;
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyResp;
+
+public interface CreditLimitDao {
+	CreditLimitDaoVerifyResp varifyPromoCode(CreditLimitDaoVerifyReq reqBean);
+
+}

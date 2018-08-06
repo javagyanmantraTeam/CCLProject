@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;xml&apos;&#x0D;&#x0A;- Original project: &apos;SOAPPratic&apos;&#x0D;&#x0A;- Destination element: &apos;xml&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     CreditLimitReq.xml&#x0D;&#x0A;     CreditLimitRes.xml" description="Copy files" element1="CreditLimitServiceSOAP-jar/src/main/resources/CreditLimitReq.xml" element2="CreditLimitServiceSOAP-jar/src/main/resources/CreditLimitRes.xml" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1533226403180" target="/CreditLimitServiceLayer/src/main/resources/com/keybank/cards/offers/xml" units="0" version="1.0"/>
+</session>

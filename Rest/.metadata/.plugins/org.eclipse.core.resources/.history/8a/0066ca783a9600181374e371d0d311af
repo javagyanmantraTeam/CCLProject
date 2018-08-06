@@ -1,0 +1,7 @@
+package com.keybank.cards.offers.dao.impl;
+
+import com.keybank.cards.offers.dao.CreditLimitDao;
+
+public class CreditLimitDaoImpl implements CreditLimitDao {
+
+}

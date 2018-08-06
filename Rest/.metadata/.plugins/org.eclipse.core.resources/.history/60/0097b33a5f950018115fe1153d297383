@@ -1,0 +1,17 @@
+package com.suman.rest;
+
+import java.util.List;
+
+import javax.ws.rs.Path;
+
+@Path("/message")
+public class Messagersource {
+	
+	MessagerService messagerservice=new MessagerService();
+
+	@Path("/m1")
+	public List<Message> getMessage(){
+		return messagerservice.getAllMessage();
+		
+	}
+}

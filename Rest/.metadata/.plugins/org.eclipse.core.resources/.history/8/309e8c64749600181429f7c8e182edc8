@@ -1,0 +1,8 @@
+package com.keybank.cards.offers.service.beans;
+
+public class ServiceDetail {
+	private String serviceName;
+	private String apiName;
+	private String version;
+
+}

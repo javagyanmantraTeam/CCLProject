@@ -1,0 +1,14 @@
+package com.keybank.cards.offers.dao.impl;
+
+import com.keybank.cards.offers.dao.CreditLimitDao;
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyReq;
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyResp;
+
+public class CreditLimitDaoImpl implements CreditLimitDao {
+
+	public CreditLimitDaoVerifyResp varifyPromoCode(CreditLimitDaoVerifyReq reqBean) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

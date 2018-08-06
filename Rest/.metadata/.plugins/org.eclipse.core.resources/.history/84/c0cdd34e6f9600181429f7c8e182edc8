@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:CreditLimitServiceRes xmlns:res="http://www.keybank.org/CreditLimitServiceRes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.keybank.org/CreditLimitServiceRes CreditLimitRes.xsd ">
+  <res:StatusBlock>
+    <res:respCode>res:respCode</res:respCode>
+    <res:respMessage>res:respMessage</res:respMessage>
+  </res:StatusBlock>
+  <res:CardDetail>
+    <res:Card>
+      <res:cardNum>res:cardNum</res:cardNum>
+    </res:Card>
+    <res:Card>
+      <res:cardNum>res:cardNum</res:cardNum>
+    </res:Card>
+    <res:Card>
+      <res:cardNum>res:cardNum</res:cardNum>
+    </res:Card>
+    <res:Card>
+      <res:cardNum>res:cardNum</res:cardNum>
+    </res:Card>
+  </res:CardDetail>
+  <res:BalanceDetail>
+    <res:currentLimit>0.0</res:currentLimit>
+    <res:eligibalAmount>0.0</res:eligibalAmount>
+  </res:BalanceDetail>
+</res:CreditLimitServiceRes>

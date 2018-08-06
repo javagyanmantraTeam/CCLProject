@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:CreditLimitReq xmlns:req="http://www.keybank.org/CreditLimitReq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.keybank.org/CreditLimitReq CreditLimitReq.xsd ">
+  <req:ClientContext>
+    <req:clientId>req:clientId</req:clientId>
+    <req:channelId>req:channelId</req:channelId>
+    <req:reqId>req:reqId</req:reqId>
+  </req:ClientContext>
+  <req:OfferDetail>
+    <req:promocode>req:promocode</req:promocode>
+  </req:OfferDetail>
+  <req:ServiceDetail>
+    <req:serviceName>req:serviceName</req:serviceName>
+    <req:apiName>req:apiName</req:apiName>
+    <req:version>req:version</req:version>
+  </req:ServiceDetail>
+</req:CreditLimitReq>

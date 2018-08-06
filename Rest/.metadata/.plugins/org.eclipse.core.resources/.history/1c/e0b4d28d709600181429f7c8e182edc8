@@ -1,0 +1,22 @@
+package com.keybank.cards.offers.service.beans;
+
+public class ClientContext {
+	
+	private String clientId;
+	private String channelId;
+	private String reqId;
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("ClientContext [clientId=");
+		builder.append(clientId);
+		builder.append(", channelId=");
+		builder.append(channelId);
+		builder.append(", reqId=");
+		builder.append(reqId);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+
+}

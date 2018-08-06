@@ -1,0 +1,9 @@
+package com.keybank.cards.offers.process.beans;
+
+public class CreditLimitVerifyProcessRespBeans {
+	
+	private String respCode;
+	private String respMessage;
+	private String currentLimit;
+	private String eligibalAmount;
+}

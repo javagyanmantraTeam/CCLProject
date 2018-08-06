@@ -1,0 +1,62 @@
+package com.keybank.cards.offers.dao.beans;
+
+import java.util.List;
+
+
+public class CreditLimitDaoVerifyResp {
+	private String respCode;
+	private String respMessage;
+	private String currentLimit;
+	private String eligibalAmount;
+	private List<CardDAO> cardProcess;
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("CreditLimitDaoVerifyResp [respCode=");
+		builder.append(respCode);
+		builder.append(", respMessage=");
+		builder.append(respMessage);
+		builder.append(", currentLimit=");
+		builder.append(currentLimit);
+		builder.append(", eligibalAmount=");
+		builder.append(eligibalAmount);
+		builder.append(", cardProcess=");
+		builder.append(cardProcess);
+		builder.append("]");
+		return builder.toString();
+	}
+	public String getRespCode() {
+		return respCode;
+	}
+	public void setRespCode(String respCode) {
+		this.respCode = respCode;
+	}
+	public String getRespMessage() {
+		return respMessage;
+	}
+	public void setRespMessage(String respMessage) {
+		this.respMessage = respMessage;
+	}
+	public String getCurrentLimit() {
+		return currentLimit;
+	}
+	public void setCurrentLimit(String currentLimit) {
+		this.currentLimit = currentLimit;
+	}
+	public String getEligibalAmount() {
+		return eligibalAmount;
+	}
+	public void setEligibalAmount(String eligibalAmount) {
+		this.eligibalAmount = eligibalAmount;
+	}
+	public List<CardDAO> getCardProcess() {
+		return cardProcess;
+	}
+	public void setCardProcess(List<CardDAO> cardProcess) {
+		this.cardProcess = cardProcess;
+	}
+	
+	
+
+}

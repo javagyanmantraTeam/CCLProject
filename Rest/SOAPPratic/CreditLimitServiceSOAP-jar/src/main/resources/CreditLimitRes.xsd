@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.keybank.org/CreditLimitServiceRes"
+	xmlns:res="http://www.keybank.org/CreditLimitServiceRes" 
+	elementFormDefault="qualified">
+
+	<element name="CreditLimitServiceRes" type="res:CreditLimitServiceResType" />
+	<complexType name="CreditLimitServiceResType">
+		<sequence>
+			<element name="StatusBlock" type="res:StatusBlockType" />
+			<element name="CardDetail" type="res:CardDetailType" />
+			<element name="BalanceDetail" type="res:BalanceDetailType" />
+		</sequence>
+	</complexType>
+	<complexType name="StatusBlockType">
+		<sequence>
+			<element name="respCode" type="string" />
+			<element name="respMessage" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="CardDetailType">
+		<sequence>
+			<element name="Card" type="res:CardType" maxOccurs="unbounded"
+				minOccurs="4"></element>
+		</sequence>
+	</complexType>
+	<complexType name="CardType">
+		<sequence>
+			<element name="cardNum" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="BalanceDetailType">
+		<sequence>
+			<element name="currentLimit" type="double"></element>
+			<element name="eligibalAmount" type="double"></element>
+		</sequence>
+	</complexType>
+
+</schema>

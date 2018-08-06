@@ -1,0 +1,18 @@
+package com.keybank.cards.offers.dao.impl;
+
+import com.keybank.cards.offers.dao.CreditLimitDao;
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyReq;
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyResp;
+
+public class CreditLimitDaoImpl implements CreditLimitDao {
+
+	public CreditLimitDaoVerifyResp varifyPromoCode(CreditLimitDaoVerifyReq reqBean) {
+
+		System.out.println("Dao enter");
+
+		CreditLimitDaoVerifyResp daoResp=new CreditLimitDaoVerifyResp();
+		System.out.println("Dao exit");
+		return daoResp;
+	}
+
+}

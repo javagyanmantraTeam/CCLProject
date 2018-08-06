@@ -1,0 +1,13 @@
+package com.suman.rest;
+
+import java.util.List;
+
+public class Messagersource {
+	
+	MessagerService messagerservice=new MessagerService();
+
+	public List<Message> getMessage(){
+		return messagerservice.getAllMessage();
+		
+	}
+}

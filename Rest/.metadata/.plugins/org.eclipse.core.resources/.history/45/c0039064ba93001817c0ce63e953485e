@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.product.org/ProductServiceReq"
+	xmlns:req="http://www.product.org/ProductServiceReq"
+	elementFormDefault="qualified">
+
+	<element name="ProductServiceReq" type="req:ProductServiceReqType"/>
+	<complexType name="ProductServiceReqType">
+		<sequence>
+			<element name="ClientContext" type="req:ClientContextType"/>
+			<element name="OfferDetail" type="req:OfferDetailType"/>
+			<element name="ServiceDetail" type="req:ServiceDetailType"/>
+		</sequence>
+	</complexType>
+	<complexType name="ClientContextType">
+		<sequence>
+			<element name="channelId" type="string" />
+			<element name="clientId" type="string" />
+			<element name="reqId" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="OfferDetailType">
+		<sequence>
+			<element name="promocode" type="string"></element>
+		</sequence>
+	</complexType>
+	<complexType name="ServiceDetailType">
+		<sequence>
+			<element name="serviceName" type="string" />
+			<element name="apiName" type="string" />
+			<element name="version" type="string" />
+		</sequence>
+	</complexType>
+</schema>

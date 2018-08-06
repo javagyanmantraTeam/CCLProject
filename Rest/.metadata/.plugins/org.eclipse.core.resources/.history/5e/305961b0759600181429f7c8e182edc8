@@ -1,0 +1,8 @@
+package com.keybank.cards.offers.service.beans;
+
+public class CreditLimitSvcVerifyRespBeans {
+	private StatusBlock statusBlock;
+	private CardDetail cardDetail;
+	private BalanceDetail balanceDetail;
+
+}

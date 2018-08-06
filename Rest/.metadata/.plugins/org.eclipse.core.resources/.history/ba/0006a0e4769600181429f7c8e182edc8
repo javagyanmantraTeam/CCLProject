@@ -1,0 +1,29 @@
+package com.keybank.cards.offers.service.beans;
+
+import java.util.List;
+
+public class CardDetail {
+	
+	private List<CardProcess> card;
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("CardDetail [card=");
+		builder.append(card);
+		builder.append("]");
+		return builder.toString();
+	}
+
+	public List<CardProcess> getCard() {
+		return card;
+	}
+
+	public void setCard(List<CardProcess> card) {
+		this.card = card;
+	}
+
+	
+	
+
+}

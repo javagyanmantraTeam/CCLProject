@@ -1,0 +1,5 @@
+package com.keybank.cards.offers.service.beans;
+
+public class ClientContext {
+
+}

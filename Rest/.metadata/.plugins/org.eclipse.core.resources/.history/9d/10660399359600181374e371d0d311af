@@ -1,0 +1,7 @@
+package com.keybank.cards.offers.service.api.impl;
+
+import com.keybank.cards.offers.service.api.CreditLimitSvcApi;
+
+public class CreditLimitProcessImpl implements CreditLimitSvcApi{
+
+}

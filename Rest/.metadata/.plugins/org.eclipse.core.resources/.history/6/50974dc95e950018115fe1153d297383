@@ -1,0 +1,13 @@
+package com.suman.rest;
+
+import java.util.List;
+
+public class Messagersource {
+	
+	Messagersource messagersource=new Messagersource();
+
+	public List<Message> getMessage(){
+		return messagersource.getMessage();
+		
+	}
+}

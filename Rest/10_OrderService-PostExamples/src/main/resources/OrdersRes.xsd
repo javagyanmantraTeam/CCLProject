@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.sreenutech.com/scema/Res"
+ xmlns:tns="http://www.sreenutech.com/scema/Res" 
+ elementFormDefault="qualified">
+ <element name="OrderRes" type="tns:OrderResBean"/>
+ <complexType name="OrderResBean">
+ 	<sequence>
+ 		<element name="desc" type="string"/>
+ 		<element name="status" type="tns:StatusBeans"/>
+ 	</sequence>
+ </complexType>
+ 
+ <complexType name="StatusBeans">
+ 	<sequence>
+ 		<element name="statucCode" type="string"/>
+ 		<element name="statucMsg" type="string"/>
+ 	</sequence>
+ </complexType>
+</schema>

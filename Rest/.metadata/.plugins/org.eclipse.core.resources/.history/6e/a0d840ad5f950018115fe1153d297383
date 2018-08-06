@@ -1,0 +1,44 @@
+package com.suman.rest;
+
+public class Message {
+
+	private String id;
+	private String created,auther,name;
+	
+	public Message() {
+
+	}
+	
+	
+	public Message(String id, String created, String auther, String name) {
+		this.id = id;
+		this.created = created;
+		this.auther = auther;
+		this.name = name;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getCreated() {
+		return created;
+	}
+	public void setCreated(String created) {
+		this.created = created;
+	}
+	public String getAuther() {
+		return auther;
+	}
+	public void setAuther(String auther) {
+		this.auther = auther;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}

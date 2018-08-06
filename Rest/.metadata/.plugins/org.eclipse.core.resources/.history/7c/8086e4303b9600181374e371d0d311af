@@ -1,0 +1,27 @@
+package com.keybank.cards.offers.process.impl;
+
+import com.keybank.cards.offers.dao.CreditLimitDao;
+import com.keybank.cards.offers.dao.impl.CreditLimitDaoImpl;
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyReq;
+import com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyResp;
+import com.keybank.cards.offers.process.CreditLimitProcess;
+import com.keybank.cards.offers.process.beans.CreditLimitProcessVerifyReqBeans;
+import com.keybank.cards.offers.process.beans.CreditLimitVerifyProcessRespBeans;
+
+public class CreditLimitProcessImpl implements CreditLimitProcess{
+
+	public CreditLimitVerifyProcessRespBeans varifyPromoCode(CreditLimitProcessVerifyReqBeans reqBean) {
+	
+		//1.get the request from service
+		//2.process the request from dao
+		CreditLimitDaoVerifyReq daoReq=new CreditLimitDaoVerifyReq();
+		
+		//3.call dao
+		CreditLimitDao dao=new CreditLimitDaoImpl();
+		CreditLimitDaoVerifyResp daoResp = dao.varifyPromoCode(daoReq);
+		
+		
+		return null;
+	}
+
+}

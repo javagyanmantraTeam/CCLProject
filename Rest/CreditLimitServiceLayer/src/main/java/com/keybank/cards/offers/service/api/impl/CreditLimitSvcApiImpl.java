@@ -1,0 +1,73 @@
+package com.keybank.cards.offers.service.api.impl;
+
+import com.keybank.cards.offers.process.CreditLimitProcess;
+import com.keybank.cards.offers.process.beans.CreditLimitProcessVerifyReqBeans;
+import com.keybank.cards.offers.process.beans.CreditLimitVerifyProcessRespBeans;
+import com.keybank.cards.offers.process.impl.CreditLimitProcessImpl;
+import com.keybank.cards.offers.service.api.CreditLimitSvcApi;
+import com.keybank.cards.offers.service.beans.ClientContext;
+import com.keybank.cards.offers.service.beans.CreditLimitSvcVerifyRespBeans;
+import com.keybank.cards.offers.service.beans.CreditLimitSvcVeriyReqBeans;
+import com.keybank.cards.offers.service.beans.OfferDetail;
+import com.keybank.cards.offers.service.beans.ServiceDetail;
+
+public class CreditLimitSvcApiImpl implements CreditLimitSvcApi {
+
+	public CreditLimitSvcVerifyRespBeans varifyPromoCode(CreditLimitSvcVeriyReqBeans reqBean) {
+
+		System.out.println("enter into service");
+		//setting ClientContext data
+		ClientContext context = new ClientContext();
+		context.setChannelId("channel1-101");
+		context.setClientId("clientId-999");
+		context.setReqId("reqId-888");
+		reqBean.setClientContext(context);
+
+		//setting OfferDetail data
+		OfferDetail offerDetail = new OfferDetail();
+		offerDetail.setPromocode("789985465465");
+
+		//setting ServiceDetail data
+		ServiceDetail serviceDetail = new ServiceDetail();
+		serviceDetail.setApiName("apiName-promocode");
+		serviceDetail.setServiceName("serviceName-service");
+		serviceDetail.setVersion("version-1");
+
+		// 1.get the request from consumer
+		reqBean.getClientContext().getChannelId();
+		reqBean.getClientContext().getClientId();
+		reqBean.getClientContext().getReqId();
+		
+		reqBean.getOfferDetail().getPromocode();
+		
+		reqBean.getServiceDetail().getApiName();
+		reqBean.getServiceDetail().getServiceName();
+		reqBean.getServiceDetail().getVersion();
+		
+		
+		// 2.validate the req
+		// 3.prepare the req from process
+		CreditLimitProcessVerifyReqBeans procReq = new CreditLimitProcessVerifyReqBeans();
+		procReq.setChannelId(reqBean.getClientContext().getChannelId());
+		procReq.setClientId(reqBean.getClientContext().getClientId());
+		procReq.setReqId(reqBean.getClientContext().getReqId());
+		
+		
+		// 4.call the process
+		CreditLimitProcess process = new CreditLimitProcessImpl();
+		CreditLimitVerifyProcessRespBeans processResp = process.varifyPromoCode(procReq);
+		// 5.process the service response
+		CreditLimitSvcVerifyRespBeans svcResp = new CreditLimitSvcVerifyRespBeans();
+		System.out.println("exit into service");
+		return svcResp;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("enter.........main......");
+		CreditLimitSvcApiImpl service = new CreditLimitSvcApiImpl();
+		CreditLimitSvcVeriyReqBeans req = new CreditLimitSvcVeriyReqBeans();
+		service.varifyPromoCode(req);
+		System.out.println("exit.........main......");
+	}
+
+}

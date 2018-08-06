@@ -1,0 +1,30 @@
+package com.keybank.cards.offers.service.api.impl;
+
+import com.keybank.cards.offers.process.CreditLimitProcess;
+import com.keybank.cards.offers.process.beans.CreditLimitProcessVerifyReqBeans;
+import com.keybank.cards.offers.process.beans.CreditLimitVerifyProcessRespBeans;
+import com.keybank.cards.offers.process.impl.CreditLimitProcessImpl;
+import com.keybank.cards.offers.service.api.CreditLimitSvcApi;
+import com.keybank.cards.offers.service.beans.CreditLimitSvcVerifyRespBeans;
+import com.keybank.cards.offers.service.beans.CreditLimitSvcVeriyReqBeans;
+
+public class CreditLimitSvcApiImpl implements CreditLimitSvcApi{
+
+	public CreditLimitSvcVerifyRespBeans varifyPromoCode(CreditLimitSvcVeriyReqBeans reqBean) {
+
+
+		System.out.println("enter into service");
+		//1.get the request from consumer
+		//2.validate the req
+		//3.prepare the req from process
+		CreditLimitProcessVerifyReqBeans procReq=new CreditLimitProcessVerifyReqBeans();
+		//4.call the process
+		CreditLimitProcess process=new CreditLimitProcessImpl();
+		CreditLimitVerifyProcessRespBeans processResp = process.varifyPromoCode(procReq);
+		//5.process the service response
+		CreditLimitSvcVerifyRespBeans svcResp=new CreditLimitSvcVerifyRespBeans();
+		System.out.println("exit into service");
+		return svcResp;
+	}
+
+}

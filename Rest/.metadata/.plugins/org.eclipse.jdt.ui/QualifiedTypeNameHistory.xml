@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.api.CreditLimitServiceApi"/>
+<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+<fullyQualifiedTypeName name="com.sun.jersey.spi.resource.Singleton"/>
+<fullyQualifiedTypeName name="org.example.creditlimitservice.CreditLimitService"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="org.keybank.creditlimitreq.CreditLimitReqType"/>
+<fullyQualifiedTypeName name="org.keybank.creditlimitserviceres.StatusBlockType"/>
+<fullyQualifiedTypeName name="org.keybank.creditlimitserviceres.CardDetailType"/>
+<fullyQualifiedTypeName name="org.keybank.creditlimitserviceres.CardType"/>
+<fullyQualifiedTypeName name="org.keybank.creditlimitreq.OfferDetailType"/>
+<fullyQualifiedTypeName name="org.keybank.creditlimitserviceres.BalanceDetailType"/>
+<fullyQualifiedTypeName name="com.suman.rest.Message"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
+<fullyQualifiedTypeName name="java.awt.TrayIcon.MessageType"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+<fullyQualifiedTypeName name="javax.management.MXBean"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.api.CreditLimitSvcApi"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.beans.CreditLimitSvcVerifyRespBeans"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.beans.CreditLimitSvcVeriyReqBeans"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.process.CreditLimitProcess"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.process.impl.CreditLimitProcessImpl"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.process.beans.CreditLimitVerifyProcessRespBeans"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.process.beans.CreditLimitProcessVerifyReqBeans"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.dao.CreditLimitDao"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.dao.impl.CreditLimitDaoImpl"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyResp"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.dao.req.CreditLimitDaoVerifyReq"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.beans.CardProcess"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.beans.ClientContext"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.beans.OfferDetail"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.service.beans.ServiceDetail"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.POA"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.process.beans.CardProcess"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.dao.beans.CardDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.keybank.cards.offers.dao.beans.Card"/>
+</qualifiedTypeNameHistroy>
